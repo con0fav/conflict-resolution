@@ -1,0 +1,98 @@
+body{
+    background-color:#333940 ;
+    box-sizing: border-box;
+}
+h1,h2,p{
+    color: #e867ed;
+}
+
+.code{
+    color:white;
+}
+
+header, .footer{
+    display:block;
+    text-align: center;
+
+}
+#header-p{
+    display:block;
+    color:white;
+    margin-bottom: 25px;
+      
+}
+.main{
+    display: flex;
+  flex-wrap: wrap;
+    
+}
+.card{
+    flex:display;
+    flex-direction: row;
+    
+    flex:33%;
+    min-height:250px;
+    /* border:2px red solid; */
+}
+@media screen and (max-width: 768px) {
+    .card {
+      flex: 50%;
+      float: left;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .card {
+      flex: 100%;
+    
+    }
+  }
+  .type{
+      width:80%;
+      height:50px;
+      border:2px white solid;
+      border-radius: 8px;
+      position: relative;
+      margin:0 auto;
+      margin-bottom:-20px;
+      background-color: #333940;
+      transition: width 2s, height 4s;
+          
+  }
+  .type:hover{
+width: 200px;
+  }
+  .type+div{
+    /* display:flex;
+    flex-direction: row;
+    flex-grow: wrap; */
+    width:90%;
+    height:200px;
+    border:2px white dashed;
+    margin:0 auto;
+    position: relative;
+    z-index: -1;
+  
+      
+  }
+  .type+div p{
+      margin-left:5%;
+    margin-top:20px;
+    
+  } 
+  .code{
+    background-color:#e867ed ;
+    margin:0 5%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: linear-gradient(#eda9f0, #e867ed);
+  }
+.type>h2{
+    margin-top:15px;
+    margin-left:10px;
+    
+}
+#pre {
+  -webkit-user-select: text; /* Safari */
+  -ms-user-select: text; /* IE 10+ and Edge */
+  user-select: text; /* Standard syntax */
+}
